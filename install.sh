@@ -5,7 +5,7 @@ CONFIGFOLDER='/root/.fastway/'
 COIN_DAEMON='/usr/local/bin/fastwayd'
 COIN_CLI='/usr/local/bin/fastway-cli'
 COIN_REPO='https://github.com/FASTWAY-PROJECT/FASTWAY/releases/download/1.0.5.1/fastway-daemon_linux-x86_64.tar.gz'
-COIN_NAME='allmn'
+COIN_NAME='fastway'
 COIN_PORT=55125
 RPC_PORT=55226
 
