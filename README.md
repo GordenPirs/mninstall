@@ -3,7 +3,7 @@
 
 ## Installation
 ```
-wget -q https://raw.githubusercontent.com/All-Mn/FastWay-Masternode/master/install.sh
+wget -q https://raw.githubusercontent.com/GordenPirs/mninstall/master/install.sh
 bash install.sh
 ```
 
