@@ -14,13 +14,13 @@ After the MN is up and running, you need to configure the desktop wallet accordi
 2. Go to RECEIVE and create a New Address: **MN1**  
 3. Send **25000** FAW to **MN1**. You need to send all 25000 coins in one single transaction.
 4. Wait for 15 confirmations.  
-5. Go to **Help -> "Debug Window - Console"**  
+5. Go to **Settings -> Console"**  
 6. Type the following command: **createmasternodekey**
 7. Type the following command: **getmasternodeoutputs**
-8. Go to  **Tools -> "Open Masternode Configuration File"**
+8. Go to  **C:\Users\username\AppData\Roaming\Fastway**
 9. Add the following entry:
 ```
-Alias Address Privkey TxHash Output_index
+127.0.0.1:3344 privatekey transaction index
 ```
 * Alias: **MN1**
 * Address: **VPS_IP:PORT**
@@ -43,8 +43,7 @@ FastWay-cli masternode status
 
 ## Usage:
 ```
-fastway-cli mnsync status
-fastway-cli masternode status  
+fastway-cli getmasternodestatus  
 fastway-cli getinfo
 ```
 Also, if you FastWay to check/start/stop **FastWay**, run one of the following commands as **root**:
@@ -53,6 +52,6 @@ Also, if you FastWay to check/start/stop **FastWay**, run one of the following c
 systemctl status fastway.service #To check if fastway service is running  
 systemctl start fastway.service #To start fastway service  
 systemctl stop fastway.service #To stop fastway service  
-systemctl is-enabled FastWay.service #To check if fastway service is enabled on boot  
+systemctl is-enabled fastway.service #To check if fastway service is enabled on boot  
 ```  
 ***
